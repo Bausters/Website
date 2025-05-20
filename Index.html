@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Heath's Doggo Shop 🐾</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .product h2 {
+      margin: 0 0 10px;
+      color: #ff6f61;
+    }
+    .product p {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .buy-btn {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .buy-btn:hover {
+      background-color: #e35447;
+    }
+    section.contact {
+      margin-top: 50px;
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section.contact h2 {
+      text-align: center;
+      color: #ff6f61;
+      margin-bottom: 20px;
+    }
+    section.contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    section.contact input,
+    section.contact textarea {
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      resize: vertical;
+    }
+    section.contact button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+    section.contact button:hover {
+      background-color: #e35447;
+    }
+    /* Responsive magic */
+    @media (max-width: 700px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Heath's Doggo Shop 🐾</header>
+
+  <main>
+    <section class="products">
+      <article class="product">
+        <img src="https://placedog.net/400/300?id=1" alt="Chewy Toy" />
+        <h2>Chewy Toy</h2>
+        <p>Keep your pupper entertained for hours with this ultra-durable chew toy.</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YOUR_PAYPAL_EMAIL&item_name=Chewy%20Toy&amount=15.00&currency_code=USD" class="buy-btn" target="_blank">Buy Now - $15</a>
+      </article>
+
+      <article class="product">
+        <img src="https://placedog.net/400/300?id=2" alt="Stylish Collar" />
+        <h2>Stylish Collar</h2>
+        <p>Make your doggo the talk of the park with this comfy and stylish collar.</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YOUR_PAYPAL_EMAIL&item_name=Stylish%20Collar&amount=25.00&currency_code=USD" class="buy-btn" target="_blank">Buy Now - $25</a>
+      </article>
+
+      <article class="product">
+        <img src="https://placedog.net/400/300?id=3" alt="Fresh Shampoo" />
+        <h2>Fresh Shampoo</h2>
+        <p>Keep that fur shiny and smelling fresh with our gentle dog shampoo.</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YOUR_PAYPAL_EMAIL&item_name=Fresh%20Shampoo&amount=12.00&currency_code=USD" class="buy-btn" target="_blank">Buy Now - $12</a>
+      </article>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Heath</h2>
+      <form action="mailto:YOUR_EMAIL_HERE" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required />
+        <input type="email" name="Email" placeholder="Your Email" required />
+        <textarea name="Message" rows="5" placeholder="Your message here..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
